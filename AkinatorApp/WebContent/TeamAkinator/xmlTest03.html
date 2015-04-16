@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="../ajax.js"></script>
+<script>
+	function fnValidate(){
+
+		var dateVal = document.getElementById("birthDate").value;
+
+		var param = "birthDate=" + dateVal;
+				
+		sendRequest("/AkinatorApp/reg.action", param, callback, "GET");
+		
+	}
+	
+	function callback(){
+	
+		if(httpRequest.readyState == 4){			
+			if(httpRequest.status == 200){
+				
+				
+			var xmlDoc = httpRequest.responseXML;
+			
+			document.getElementById("dateMessage").innerHTML =
+				xmlDoc.getElementsByTagName("message").item(0).firstChild.nodeValue;
+			
+			//document.getElementById("dateMessage").value=
+				//xmlDoc.getElementsByTagName("message").item(0).firstChild.nodeValue; // 
+			
+				
+			}
+			else{
+				alert(httpRequest.status);
+			}
+		}
+	}
+
+</script>
+<style>
+	span{color:red}
+</style>
+</head>
+<body>
+<h1>Ajax를 이용한 유효성 검사</h1>
+Birth Day(ex:yyyy/mm/dd) : <input type="text" size="10" id="birthDate" onchange="fnValidate()"/>
+<br/>
+<span id="dateMessage"></span>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>AkinatorApp68_1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>enter.jsp</welcome-file>
+  </welcome-file-list>
+    
+    <resource-ref>
+    	<res-ref-name>jdbc/oracleDB</res-ref-name>
+    	<res-type>javax.sql.DataSource</res-type>
+    	<res-auth>Container</res-auth>
+    </resource-ref> 
+    
+    <servlet>
+    	<servlet-name>Akinator</servlet-name>
+    	<servlet-class>Member.FrontController</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>Akinator</servlet-name>
+    	<url-pattern>/reg.action</url-pattern>
+    </servlet-mapping>
+    
+    <!-- mongo test -->
+      <servlet>
+    	<servlet-name>mongo1</servlet-name>
+    	<servlet-class>main.mongoFrontcontroller</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>mongo1</servlet-name>
+    	<url-pattern>/mongo.action</url-pattern>
+    </servlet-mapping>
+    
+    
+     <!-- loginview -->
+    <servlet>
+    	<servlet-name>loginview</servlet-name>
+    	<servlet-class>Member.FrontController</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>loginview</servlet-name>
+    	<url-pattern>/loginview.action</url-pattern>
+    </servlet-mapping>
+    
+    <!-- pay -->
+     <servlet>
+    	<servlet-name>pay</servlet-name>
+    	<servlet-class>Member.FrontController</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>pay</servlet-name>
+    	<url-pattern>/Pay.action</url-pattern>
+    </servlet-mapping>
+    
+    <!-- payview -->
+     <servlet>
+    	<servlet-name>payview</servlet-name>
+    	<servlet-class>Member.FrontController</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>payview</servlet-name>
+    	<url-pattern>/Payview.action</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- product_detail_list_view -->
+     <servlet>
+    	<servlet-name>productdetail_view</servlet-name>
+    	<servlet-class>Member.FrontController</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>productdetail_view</servlet-name>
+    	<url-pattern>/productdetailview.action</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- product_detail -->
+    <servlet>
+    	<servlet-name>productdetail</servlet-name>
+    	<servlet-class>Member.FrontController</servlet-class>    		
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>productdetail</servlet-name>
+    	<url-pattern>/Productdetail.action</url-pattern>
+    </servlet-mapping>
+    
+    <!-- ㅇㅇ -->
+      <servlet>
+    <servlet-name>aki</servlet-name>
+    <servlet-class>akinator.FrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>aki</servlet-name>
+    <url-pattern>/front.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>akinator.test</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>Admin.FrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 게시판 Servlet by 동리 -->
+    <servlet>
+    <servlet-name>board</servlet-name>
+    <servlet-class>Board.board.FrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>board</servlet-name>
+    <url-pattern>/board.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  	<!-- 뉴스피드 Servlet by 동리 -->
+  	    <servlet>
+    <servlet-name>newspeed</servlet-name>
+    <servlet-class>NewSpeed.FrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>newspeed</servlet-name>
+    <url-pattern>/newspeed.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

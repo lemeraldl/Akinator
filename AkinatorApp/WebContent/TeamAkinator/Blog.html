@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Akinator#</title>
+<link href= "../bootstrap/css/bootstrap.min.css" rel ="stylesheet" media= "screen" />
+<link href= "../bootstrap/css/bootstrap-responsive.css" rel ="stylesheet"  media= "screen"/>
+<script src= "../script/jquery-2.1.1.min.js"></script >
+<script src= "../script/bootstrap.js"></script >
+<script type= "text/javascript">
+$(document).ready(function() {
+    //스크롤 이벤트 발생 시
+    $(window).scroll( function() {
+    var scrollHeight = $(window).scrollTop()+$(window).height();
+    var documentHeight = $(document).height();
+    if (scrollHeight = documentHeight) {
+    for(var i=0; i <10; i++) {
+    $("<h1>1</h1>").appendTo("body"); // <img src='../img/2.png'>
+    }
+    }
+    });
+    });
+    $(document).ready( function() {
+    for(var i=0; i<20; i++) {
+    $("<h1>aa</h1>").appendTo("body");
+    }
+    });	
+</script>
+<style>
+	body{margin-top:100px}
+	body{background-color: #f4f4f0}		
+	
+</style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-fixed-top"><!-- 상단 메뉴바 속성 지정, 상단메뉴바 고정 -->	
+	<div class="navbar-inner">
+	
+			<a href="AkinatorMain.html" class="brand" style="margin-left: 1000">Akinator</a><!-- 상단 맨 오른쪽에 오는 홈 -->					
+			<form class="navbar-form pull-left" >			
+				<input type="text" name="txtSearch" value="" placeholder="검색어를 입력하세요!" class="search-query"/>			
+				<input type="submit" name="search" value="검색" class="btn btn-info"></input>			
+			</form>		
+		
+		<!-- 상단 메뉴바1  -->
+		<div class="navbar-inner" id="sidang">	
+			<form class="navbar-form pull-right">
+				<ul  class="nav" margin-right: 50px>
+					<li class="divider-vertical"></li>
+					<li><a href="#">￦상품등록</a></li>
+					<li class="divider-vertical"></li> <!-- 구분선 -->
+					<li><a href="#">알림</a></li>
+					<li class="divider-vertical"></li>
+						<li class="dropdown">
+         			<a href="#" class="dropdown-toggle" data-toggle="dropdown">동리</a>
+         				<ul class="dropdown-menu" >
+            				<li><a href="http://www.naver.com" 	>내 상점</a></li>
+            				<li class="divider"></li>  
+            				<li><a href="http://www.naver.com">뉴스피드</a></li>
+							<li class="divider"></li>
+							<li><a href="http://www.naver.com">내 상품 관리</a></li>
+							<li class="divider"></li>    
+							<li><a href="http://www.naver.com">내가 한 찜</a></li>
+							<li class="divider"></li>  
+							<li><a href="http://www.naver.com">로그아웃</a></li>
+							<li class="divider"></li>								
+				</ul>		
+			</form>
+		</div>
+
+	</div>
+
+
+	<div class="navbar-inner">	
+		<form class="navbar-form pull" style="margin-left:450px">
+			<ul class="nav nav-list">				
+			  	<li class="dropdown">
+         		<a href="#" class="dropdown-toggle" data-toggle="dropdown">홈</a>
+         			<ul class="dropdown-menu">
+            		<li><a href="http://www.naver.com">인기상품</a></li>
+            		<li class="divider"></li>  
+           			<li><a href="http://www.daum.net">최신상품<i class="icon-heart"></i></a></li>              			       
+         			</ul>
+      			</li>
+      					<li class="divider-vertical"></li><!-- 구분선 -->
+					
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">카테고리</a>
+							<ul class="dropdown-menu">							
+							</ul>
+						</li>
+						<li class="divider-vertical"></li>
+				<li class="dropdown">
+         		<a href="#" class="dropdown-toggle" data-toggle="dropdown">상점</a>
+         			<ul class="dropdown-menu">
+            		<li><a href="http://www.naver.com">인기상점<i class="icon-heart"></i></a></li>
+            		<li><a href="http://www.daum.net"></a></li>  
+            		<li class="divider"></li>        
+         			</ul>
+      			</li>
+					<li class="divider-vertical"></li>
+					<li><a href="#">모바일</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="#">커뮤니티</a></li>	
+			</ul>
+		</form>
+	</div>
+	<!-- 블로그 개인 프로필 -->
+	<div class="container-fluid" style="background-color: #504d4b">
+   <div class ="row" >
+      <div class ="span12">
+         <div class ="carousel slide span4" id= "theCarousel" style="color: white; margin-left: 250px">
+			<h1>ID</h1>
+			<p>오픈한지 182일</p>			       		
+         </div>    
+         
+         <div class ="span4" id= "theCarousel" style="color: white; margin-left: 550px"> 
+			<img src="../img/main.png"/>
+			
+         </div>  
+         
+          <div class ="span8" style="color: white; margin-left: 1000px;" > 
+			<h1>Reviews</h1>		       		
+         </div>     
+      </div>
+   </div>
+</div>
+		<!-- 개인블로그 메뉴 부분 -->
+		<nav class="navbar navbar">		
+					<div class="navbar-inner" id="sidang">	
+			<form class="navbar-form pull-left">
+				<ul  class="nav" style="margin-left:150px">
+					<li class="divider-vertical"></li>
+					<li><a href="#">상품</a></li>
+					<li class="divider-vertical"></li> <!-- 구분선 -->
+					<li><a href="#">상점댓글</a></li>
+					<li class="divider-vertical"></li>						         				
+			
+			
+			
+				<ul  class="nav" style="margin-left:700px">
+					<li class="divider-vertical"></li>
+					<li><a href="#">팔로워</a></li>
+					<li class="divider-vertical"></li> <!-- 구분선 -->
+					<li><a href="#">팔로잉</a></li>
+					<li class="divider-vertical"></li>						         				
+			</form>
+		</div>
+		</nav>
+</nav>	
+
+
+<div class="container">
+	<div class="row">
+		<div class="span9" style="background-color: #504d4b; margin-top:320px; color: white">
+			내용 들어오는 곳...
+		</div>
+		<!-- 사이드 바 
+		<div class="span3">
+			<ul class="nav span3 nav-list">
+            	<li class="nav-header">메뉴 선택1</li>
+            		<li class="active"><a href="#">메인</a></li>
+            			<li><a href="#">전화번호</a></li>
+           				 <li><a href="#">쇼핑</a></li>
+           				 <li class="divider"></li>
+           				 <li class="nav-header">메뉴 선택2</li>
+            			<li><a href="#">오시는 길</a></li>
+            			<li><a href="#">가시는 길</a></li>
+         	</ul>
+		</div>
+		 -->
+	
+			<div class="container">	
+				<div class="span8">
+				ㅇㅇ
+				</div>
+			</div>
+			
+		
+		
+	
+
+		<!-- 페이징
+		<div class="pagination pagination-centered bottom-page" style="margin-bottom:50px">
+			<ul>
+				<li><a href="#">처음</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">다음 10개</a></li>
+			</ul>
+		</div>
+		 -->
+	</div>
+</div>
+
+
+<!-- 꼬릿말 -->
+<nav class="navbar navbar-fixed-bottom">
+<div class="navbar-inner">
+    <div id="foot_pop" style="display: none; color:#555555; position:fixed; width: 162px; height: 87px; padding: 10px; font-size: 12px; z-index: 5001; bottom:33px; background: url(/quicket/images/popbg.png)">
+        <div style="font-size:15px">메일 : akinator@co.kr</div>
+        <div style="font-size:12px">전화 : 02.123.1234</div>
+        <div style="font-size:11px; color:#E0624D; margin-top: 3px">메일로 연락주시면, 보다 빠른 답변을 받으실 수 있습니다.</div>
+    </div>
+    <div id="footer" style="font-size: 0.85em; margin: 0 auto;">
+
+        <div style="padding-top: 18px;">
+            <span style="margin-left: 5px;"><img style="margin-top: -15px;" src=""/></span>
+            <span style="margin-left: 5px;">Akinator#  </span>
+            <span style="margin-left: 5px;">사업자등록: 369-3699-369</span>
+            <span style="margin-left: 5px;">서울시 종로구 봉익동 10-1 디아망4층</span>
+            <span style="color: #888; font-size: 1.1em; text-decoration: none; margin-left: 15px;">
+                <a href="javascript:;" id="aaa" onclick="javascript: $('#foot_pop').css('left',this.offsetLeft - 67); $('#foot_pop').toggle(); " target="_blank">고객센터</a>
+            </span>
+            <span style="color: #888; font-size: 1.1em; text-decoration: none; margin-left: 3px;">|</span>
+            <span style="color: #888; font-size: 1.1em; text-decoration: none; margin-left: 3px;"><a href="http://bunjang.co.kr/m/terms/" target="_blank">이용약관/개인정보취급방침</a></span>
+            <span style="color: #888; font-size: 1.1em; text-decoration: none; margin-left: 3px;">|</span>
+            <span style="color: #888; font-size: 1.1em; text-decoration: none; margin-left: 3px;"><a href="/marketing" target="_blank">광고센터</a></span>
+        </div>
+    </div>
+    </div>
+</nav>
+</body>
+</html>
