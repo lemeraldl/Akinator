@@ -5,3 +5,5 @@ asdasdasdasdasdsad
 asdasdsdasdsad
 
 
+<pre style="background:#000;color:#f8f8f8">select <span style="color:#e28964">*</span> <span style="color:#e28964">from</span> <span style="color:#3387cc">tab</span>
+</pre>
